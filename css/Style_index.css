@@ -1,0 +1,7 @@
+.container {
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto; /* Center the container */
+    padding-top: 300px; /* Add some padding at the top */
+    z-index: 1;
+}

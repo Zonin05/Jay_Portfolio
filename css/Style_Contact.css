@@ -1,0 +1,168 @@
+.container1 {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    padding: 20px;
+}
+
+
+.social-icons {
+    position: relative;
+    width: 500px; /* adjust as needed */
+    height: 500px; /* adjust as needed */
+}
+
+/* Base style for all social icons */
+.social-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Positioning without margins */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+
+/* Specific positioning for each icon */
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png');
+    top: 300px;
+    left: 200px;
+}
+
+.linkedin {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s');
+    top: 300px;
+    left: 380px;
+}
+
+.github {
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png');
+    top: 300px;
+    left: 550px;
+}
+
+.reddit {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZUkG9d1o5ID5hRCvHSRfZCesJpzAYlhw3A&s');
+    top: 450px;
+    left: 470px;
+}
+
+.stack {
+    background-image: url('https://static-00.iconduck.com/assets.00/stack-overflow-icon-2048x2048-7ohycn5z.png');
+    top: 450px;
+    left: 290px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 20px; /* Adds padding around the form */
+    width: 30%; /* Adjust width as needed */
+    height: auto; /* Adjust height to fit content */
+    margin-left: auto; /* Centers the form horizontally */
+    margin-right: 200px; /* Centers the form horizontally */
+    margin-top: 200px; /* Adjust top margin */
+    background-color: #e3dac9; /* Optional: adds a background to the form */
+    border-radius: 8px; /* Optional: adds rounded corners to the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Stack the input containers vertically */
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 70%; /* Ensure the row takes the full width of the form */
+}
+
+.input-container {
+    width: 100%; /* Take full width within the form */
+    max-width: 400px; /* Optional: Limit the maximum width */
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Keeps labels left aligned */
+}
+
+.input-container input, .input-container textarea {
+    width: 100%; /* Ensure inputs stretch to fill the container */
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 5px; /* Add spacing between label and input */
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.send-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center; /* Align the button to the center */
+    width: 100%;
+    max-width: 300px; /* Optional: Limit the maximum width */
+}
+
+.send-btn:hover {
+    background-color: #45a049;
+}
+
+.send-btn:active {
+    background-color: #3e8e41;
+}
+
+/* Dark Mode Styling for Contact Form */
+body.dark-mode .contact-form {
+    background-color: #343a40; /* Dark mode background */
+    color: #f8f9fa; /* Light text color for contrast */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Softer shadow for dark mode */
+}
+
+/* Dark Mode for Form Row */
+body.dark-mode .form-row {
+    color: #f8f9fa;
+}
+
+/* Dark Mode Styling for Input Containers */
+body.dark-mode .input-container input,
+body.dark-mode .input-container textarea {
+    background-color: #495057; /* Darker input field background */
+    color: #f8f9fa; /* Light text color */
+    border: 1px solid #6c757d; /* Subtle border color */
+}
+
+/* Dark Mode Styling for Send Button */
+body.dark-mode .send-btn {
+    background-color: #6c757d; /* Darker button background */
+    color: #f8f9fa; /* Light text color */
+}
+
+/* Dark Mode Styling for Send Button Hover and Active States */
+body.dark-mode .send-btn:hover {
+    background-color: #5a6268; /* Slightly lighter for hover */
+}
+
+body.dark-mode .send-btn:active {
+    background-color: #495057; /* Darker shade for active state */
+}

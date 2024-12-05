@@ -1,0 +1,278 @@
+body {
+    font-family: 'Courier', sans-serif; /* Updated font family */
+    margin: 0;
+    padding: 0;
+    background-color: #E3DAC9; /* Changed to bone color */
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+/* Container3 styling */
+.container3 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Styling for button1 */
+button1 {
+    background-color: #ffffff; /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+button1:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Project overlay styling */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.4s ease; /* Smooth transition */
+    border-radius: inherit; /* Matches the .p1 border radius */
+    text-align: center;
+}
+
+/* Text styling inside overlay */
+.project-overlay h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.project-overlay p {
+    font-size: 1em;
+    margin: 10px;
+}
+
+p{
+   font-size: 20px; 
+}
+/* Heading and Paragraph Styles */
+h1 {
+    margin-left: 0; /* Align text to the left */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Button Container */
+.icon-btn {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* Individual Icon Styles */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+body.dark-mode .icon-btn .icon {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.icon:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Hide scrollbar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    position: relative;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.dropdown a.selected::after {
+    content: '✓';
+    position: absolute;
+    right: 10px;
+    color: rgb(0, 0, 0);
+    scrollbar-width: none; /* For Firefox */
+}
+
+.Back{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-btn {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+.hamburger-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles for Hamburger */
+body.dark-mode .hamburger-btn {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Dark Mode Styles for Hamburger */
+body.dark-mode .Back {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.Back:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .hamburger-btn:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .Back:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Overlay Styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+/* Sidebar and Overlay Active States */
+.sidebar.open {
+    display: block;
+    transform: translateX(0);
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}

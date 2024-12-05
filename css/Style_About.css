@@ -1,0 +1,73 @@
+/* Profile section container */
+.profile-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    gap: 20px;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 200px; 
+    height: 200px;
+    background-image: url('P1(ALT).jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Expanded profile picture styling */
+.profile-pic.expanded {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+/* Profile text styling */
+.profile-text {
+    background-color: #e3dac9; /* Light mode background */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Dark Mode for Profile Text */
+body.dark-mode .profile-text {
+    background-color: #495057; /* Darker color for dark mode */
+    color: #f8f9fa; /* Light text color for readability */
+}
+
+/* About Me heading */
+.profile-text h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+/* Dark Mode for Profile Text */
+body.dark-mode .profile-text h1 {
+    background-color: #495057; /* Darker color for dark mode */
+    color: #ffffff; /* Light text color for readability */
+}
+
+/* Content section for two-column layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-left: 280px;
+    width: 80%;
+}
+
+/* Column styling */
+.column {
+    width: 48%;
+}

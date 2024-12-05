@@ -1,0 +1,64 @@
+/* Box container styling */
+.box-container5 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+/* Styling for each box */
+.c1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.pikbest.com/wp/202347/minimalist-calendar-minimalistic-3d-with-stylish-design-on-light-blue-background_9763678.jpg!bw700');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.c1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.c2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://thumbs.dreamstime.com/b/pie-chart-sale-headline-calculator-vertical-simple-photo-color-printed-paper-sheet-as-main-motif-black-background-50524308.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.c2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.c3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/clock-9-blank-space-text-ideas-time-concept-vertical-mobile-wallpaper_795881-33713.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.c3:hover .project-overlay {
+    opacity: 0.8;
+}
+

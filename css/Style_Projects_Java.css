@@ -1,0 +1,45 @@
+/* Box container styling */
+.box-container4 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 520px;
+}
+
+/* Styling for each box */
+.j1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://plus.unsplash.com/premium_photo-1681429766540-f05bd18b4002?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMGJ1aWxkaW5nJTIwNGslMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.j1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.j2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/empty-state-art-storehouse-ready-new-inventory-storage-vertical-mobile-wallpaper_896558-15933.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.j2:hover .project-overlay {
+    opacity: 0.8;
+}

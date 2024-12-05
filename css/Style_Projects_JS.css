@@ -1,0 +1,63 @@
+/* Box container styling */
+.box-container3 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+/* Styling for each box */
+.js1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://i.pinimg.com/originals/e1/27/03/e12703c233530c4649ac213c7954688e.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.js1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.js2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-vector/dollar-sign-pattern-background_23-2150981635.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.js2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.js3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/1322199174/photo/meal-plan-concept-hard-light.jpg?s=612x612&w=0&k=20&c=6XuA4I3sy94ougcq7Yrz52mR3s27QBjDeqRttsc_e2w=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.js3:hover .project-overlay {
+    opacity: 0.8;
+}

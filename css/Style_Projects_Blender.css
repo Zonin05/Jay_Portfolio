@@ -1,0 +1,26 @@
+/* Box container styling */
+.box-container6 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 760px;
+}
+
+/* Styling for each box */
+.b1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://i.pinimg.com/736x/f9/42/16/f942166045ef57e0f66714ede373228e.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.b1:hover .project-overlay {
+    opacity: 0.8;
+}

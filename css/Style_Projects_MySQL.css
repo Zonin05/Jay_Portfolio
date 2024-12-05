@@ -1,0 +1,69 @@
+
+/* Box container styling */
+.box-container2 {
+    display: flex;
+    justify-content: middle; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 310px;
+}
+
+h1[data-lang-text="projects"] {
+    margin: 0;
+}
+
+/* Styling for each box */
+.m1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/public-library-scene-bookshelves-filled-with-diverse-collection-vertical-mobile-wallpaper_795881-33902.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.m1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.m2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://cdn.sanity.io/images/drq70983/production/6b58d0074596c0c9d03a679320de06c8286e36eb-1999x1467.jpg?fit=max&auto=format');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.m2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.m3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-psd/shopping-vertical-background_23-2150409479.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.m3:hover .project-overlay {
+    opacity: 0.8;
+}
+

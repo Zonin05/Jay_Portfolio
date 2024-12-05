@@ -1,0 +1,81 @@
+/* Box container styling */
+.box-container1 {
+    display: flex;
+    justify-content: center; /* Center the boxes in the container */
+    margin-top: 250px;
+    gap: 50px;
+    Margin-left: 100px;
+}
+
+/* Styling for each box */
+.p1 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/469850273/photo/lightning-with-dramatic-cloudscape.jpg?s=612x612&w=0&k=20&c=AwlD6sOgSOaX6MojEFnIiwzLMmX0WZ_bT-dTMgv-hXk=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+/* Show overlay on hover */
+.p1:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p2 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://media.istockphoto.com/id/1438754625/photo/brooklyn-bridge.jpg?s=612x612&w=0&k=20&c=EimnFmsFYSzKFoDfSy_gYlc6Aoi-FryQu8-0jE_klFU=');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p2:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p3 {
+    width: 400px;
+    height: 600px;
+    background-image: url('https://img.freepik.com/premium-photo/financial-stock-market-graph-technology-abstract-background-vertical-mobile-wallpaper_892776-4424.jpg');
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p3:hover .project-overlay {
+    opacity: 0.8;
+}
+
+/* Styling for each box */
+.p4 {
+    width: 400px;
+    height: 600px;
+    background-color: #495057;
+    background-size: cover; /* Ensures image fills the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 0px 5px 15px;
+    position: relative; /* Needed to position overlay inside the box */
+    overflow: hidden; /* Ensures overlay doesn't exceed box borders */
+}
+
+.p4:hover .project-overlay {
+    opacity: 0.8;
+}
