@@ -1,7 +1,24 @@
 .container {
     max-width: 800px;
+    width: 90%; /* Makes it responsive */
     text-align: justify;
     margin: 0 auto; /* Center the container */
-    padding-top: 300px; /* Add some padding at the top */
+    padding-top: 100px; /* Reduced for better responsiveness */
     z-index: 1;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 80px; /* Adjust padding */
+        width: 95%; /* Slightly wider for better use of space */
+    }
+}
+
+/* Small screens (Phones) */
+@media (max-width: 480px) {
+    .container {
+        padding-top: 50px; /* Reduce padding further */
+        width: 100%; /* Full width for better use of space */
+    }
 }
