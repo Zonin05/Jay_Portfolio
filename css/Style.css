@@ -1,15 +1,16 @@
 body {
-    font-family: 'Courier', sans-serif; /* Updated font family */
+    font-family: 'Courier', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E3DAC9; /* Changed to bone color */
+    background-color: #E3DAC9;
     color: #000;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh; /* Changed from height: 100vh to allow scrolling */
     position: relative;
     transition: background-color 0.3s ease;
+    flex-direction: column; /* Ensures vertical stacking on small screens */
 }
 
 /* Dark Mode */
@@ -25,28 +26,29 @@ body.dark-mode {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90%; /* Make it responsive */
+    max-width: 500px; /* Limit size on larger screens */
 }
 
-/* Styling for button1 */
-button1 {
-    background-color: #ffffff; /* Green background */
-    color: rgb(0, 0, 0); /* White text */
-    padding: 10px 20px; /* Padding for the button */
-    font-size: 16px; /* Font size */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth background color change */
+/* Fixed button class name */
+.button1 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button1:hover {
-    background-color: #45a049; /* Darker green on hover */
+.button1:hover {
+    background-color: #45a049;
 }
 
-
-/* Project overlay styling */
+/* Responsive Project Overlay */
 .project-overlay {
-    position: absolute;
+    position: fixed; /* Fixed so it covers the whole screen properly */
     top: 0;
     left: 0;
     width: 100%;
@@ -57,13 +59,12 @@ button1:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0; /* Hidden initially */
-    transition: opacity 0.4s ease; /* Smooth transition */
-    border-radius: inherit; /* Matches the .p1 border radius */
+    opacity: 0;
+    transition: opacity 0.4s ease;
     text-align: center;
 }
 
-/* Text styling inside overlay */
+/* Text inside overlay */
 .project-overlay h2 {
     font-size: 1.8em;
     margin: 10px 0;
@@ -72,14 +73,6 @@ button1:hover {
 .project-overlay p {
     font-size: 1em;
     margin: 10px;
-}
-
-p{
-   font-size: 20px; 
-}
-/* Heading and Paragraph Styles */
-h1 {
-    margin-left: 0; /* Align text to the left */
 }
 
 /* Link Styles */
@@ -119,7 +112,6 @@ a:hover {
     font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: relative;
 }
 
 body.dark-mode .icon-btn .icon {
@@ -131,66 +123,11 @@ body.dark-mode .icon-btn .icon {
     background-color: #0056b3;
 }
 
-/* Dropdown Menu Styles */
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 45px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden; /* Hide scrollbar */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    scrollbar-width: none; /* For Firefox */
-}
-
-.dropdown a {
-    display: block;
-    padding: 6px;
-    text-decoration: none;
-    color: #000;
-    white-space: nowrap;
-    position: relative;
-    scrollbar-width: none; /* For Firefox */
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-    scrollbar-width: none; /* For Firefox */
-}
-
-.dropdown a.selected::after {
-    content: '✓';
-    position: absolute;
-    right: 10px;
-    color: rgb(0, 0, 0);
-    scrollbar-width: none; /* For Firefox */
-}
-
-.Back{
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 2;
-}
-
-/* Hamburger Menu Styles */
+/* Hamburger Menu for Mobile */
 .hamburger-btn {
     position: absolute;
-    top: 45px;
-    left: 30px;
+    top: 15px;
+    left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,31 +146,12 @@ body.dark-mode .icon-btn .icon {
     background-color: #0056b3;
 }
 
-/* Dark Mode Styles for Hamburger */
 body.dark-mode .hamburger-btn {
     background-color: #f8f9fa;
     color: #000;
 }
 
-/* Dark Mode Styles for Hamburger */
-body.dark-mode .Back {
-    background-color: #f8f9fa;
-    color: #000;
-}
-
-.Back:hover {
-    background-color: #0056b3;
-}
-
-body.dark-mode .hamburger-btn:hover {
-    background-color: #0056b3;
-}
-
-body.dark-mode .Back:hover {
-    background-color: #0056b3;
-}
-
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
     display: none;
     position: fixed;
@@ -248,31 +166,109 @@ body.dark-mode .Back:hover {
     transition: transform 0.3s ease;
 }
 
-.sidebar a {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-/* Overlay Styles */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    transition: opacity 0.3s ease;
-}
-
-/* Sidebar and Overlay Active States */
 .sidebar.open {
     display: block;
-    transform: translateX(0);
 }
 
-.overlay.active {
-    display: block;
-    opacity: 1;
+/* Back Button */
+.Back {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+body.dark-mode .Back {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.Back:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .icon-btn {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .container3 {
+        top: 20%;
+        width: 95%;
+    }
+
+    .button1 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .project-overlay h2 {
+        font-size: 1.5em;
+    }
+
+    .project-overlay p {
+        font-size: 0.9em;
+    }
+
+    .hamburger-btn {
+        top: 10px;
+        left: 10px;
+    }
+
+    .Back {
+        top: 70px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container3 {
+        top: 25%;
+        width: 100%;
+    }
+
+    .button1 {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .icon-btn {
+        top: 10px;
+        right: 10px;
+    }
+
+    .hamburger-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+
+    .Back {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+
+    .sidebar {
+        width: 80%;
+    }
 }
